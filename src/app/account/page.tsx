@@ -35,9 +35,21 @@ export default function AccountPage() {
       <h1 className="text-2xl font-light text-charcoal mb-2">
         Hello, {user.firstName}
       </h1>
-      <p className="text-[13px] text-warm-gray mb-10">
+      <p className="text-[13px] text-warm-gray mb-6">
         Welcome back to your FashionHero account.
       </p>
+
+      {/* Seller panel CTA */}
+      <Link
+        href="/seller-panel"
+        className="flex items-center justify-between px-4 py-3 mb-10 rounded-lg border border-black/10 hover:border-charcoal transition-colors group cursor-pointer"
+      >
+        <div>
+          <p className="text-[13px] font-medium text-charcoal">Seller Panel</p>
+          <p className="text-[12px] text-warm-gray">Manage your listings and promote products</p>
+        </div>
+        <span className="text-warm-gray group-hover:text-charcoal transition-colors text-lg">→</span>
+      </Link>
 
       {/* Order History */}
       <section className="mb-10">

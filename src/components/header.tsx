@@ -75,6 +75,14 @@ export function Header({ onCartOpen, cartCount = 0, wishlistCount = 0 }: HeaderP
               </span>
             )}
           </Link>
+          {user && (
+            <Link
+              href="/seller-panel"
+              className="hidden sm:block text-[12px] text-charcoal hover:opacity-60 transition-opacity"
+            >
+              Seller Panel
+            </Link>
+          )}
           <Link
             href={user ? "/account" : "/account/login"}
             aria-label="Account"

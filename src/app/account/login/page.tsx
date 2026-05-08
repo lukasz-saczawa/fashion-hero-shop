@@ -8,8 +8,8 @@ import { useAuth } from "@/components/auth-provider";
 export default function LoginPage() {
   const { login } = useAuth();
   const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("kamil@fashionhero.pl");
+  const [password, setPassword] = useState("demo123");
   const [error, setError] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
